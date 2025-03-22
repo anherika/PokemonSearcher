@@ -1,7 +1,7 @@
 # Pokémon Searcher 🔍✨
-**Pokémon Searcher** (también conocido como **PokéFind**) es una herramienta creada por y para fans del mundo Pokémon. Te ayuda a buscar Pokémon y construir equipos competitivos para los juegos *Scarlet & Violet* y *Sword & Shield*.
+**Pokémon Searcher** (también conocido como **PokéFind**) es una herramienta creada por y para fans del mundo Pokémon. Esta te ayudará a buscar Pokémon y construir equipos competitivos para los juegos *Scarlet & Violet* y *Sword & Shield* a futuro la idea es poder crear también para el mundo de tcg.
 
-## 🌐 Demo en vivo 🚀
+## 🚀 Version 0.2
 https://anherika.github.io/PokemonSearcher
 
 ---
@@ -24,11 +24,11 @@ PokemonSearcher/
 
 ## 💡 ¿Qué ofrece?
 
-- 🔍 Buscador de Pokémon por nombre o equipo.
-- 📖 Sección informativa sobre la comunidad y la iniciativa.
-- 📚 Pokedex visual.
-- 🧑‍🤝‍🧑 Sección de comunidad.
-- 📥 Suscripción a novedades (simulada).
+- 🔍 Buscador de Pokémon por nombre o equipo
+- 📖 Sección informativa sobre la comunidad y la iniciativa
+- 📚 Pokedex visual
+- 🧑‍🤝‍🧑 Sección de comunidad
+- 📥 Suscripción a novedades
 
 ---
 
@@ -57,10 +57,10 @@ PokemonSearcher/
 
 ## 👨‍💻 Cómo contribuir
 
-1. Cloná el repositorio  
-2. Creá una rama para tus cambios  
-3. Hacé commit de tus mejoras  
-4. Enviá un pull request si querés colaborar  
+1. Deberas *clonar* el repositorio  
+2. Crear una *rama* para tus cambios  
+3. Después hacer *commit* de tus mejoras  
+4. Enviar un *pull* request si querés colaborar  
 
 ---
 
