@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Pokémon Searcher</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header class="header-pikachu">
+        <nav class="nav-charizard">
+            <img src="../assets/img/pokefind-logo.png" alt="pokefind-logo">
+            <ul>
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="../pages/pokedex.html">Pokedex</a></li>
+                <li><a href="../pages/team.html">Teams</a></li>
+                <li><a href="../pages/community.html">Community</a></li>
+                <li><a href="../pages/about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pokedex-container">
+        <section class="search-section">
+            <h3>Search your Pokémon</h3>
+            <div class="search-box">
+                <input type="text" class="input-search" placeholder="Search a Pokémon, number # or color">
+                <img src="../assets/img/icons/search.svg" class="search-icon" alt="Search">
+            </div>
+            <div class="filters">
+                <select class="input-search">
+                    <option>Fire</option>
+                    <option>Water</option>
+                    <option>Grass</option>
+                    <option>Electric</option>
+                    <option>Psychic</option>
+                </select>
+                <select class="input-search">
+                    <option>Generation VI</option>
+                    <option>Generation VII</option>
+                    <option>Generation VIII</option>
+                    <option>Generation IX</option>
+                </select>
+                <select class="input-search">
+                    <option>Tackle</option>
+                    <option>Thunderbolt</option>
+                    <option>Flamethrower</option>
+                    <option>Hydro Pump</option>
+                    <option>Shadow Ball</option>
+                    <option>Ice Beam</option>
+                </select>
+            </div>
+            </div>
+            <button class="search-button">Search Pokémon</button>
+        </section>
+
+        <section class="results-section">
+            <div class="image-placeholder"></div>
+            <img id="empty-square" src="../assets/img/searcher.png" alt="">
+            <h3>Find the best one for you</h3>
+            <p>The right Pokémon will match your style, strengths, and journey—making every battle truly yours!</p>
+        </section>
+    </main>
+
+    <footer class="footer-squirtle">
+        <h3>Suscribe for more</h3>
+        <div class="email-subscribe">
+            <input type="email" placeholder="Email" class="input-togepi">
+            <button class="button-charmander">Suscribe</button>
+        </div>
+        <p class="caption">2025 Pokémonfind.<br>
+            Not affiliated with Nintendo, Game Freak, or The Pokémon Company.</p>
+    </footer>
+</body>
+
+</html>

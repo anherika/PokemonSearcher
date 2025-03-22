@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cabin, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: center;
+    color: #353534;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 8px;
+}
+
+h2 {
+    font-size: 64px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.header-pikachu {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F5F1EE;
+    padding: 20px;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-charizard {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente */
+    justify-content: space-between;
+    /* Separa el logo y la nav */
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.nav-charizard ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-charizard a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 300;
+}
+
+.nav-charizard img {
+    height: 50px;
+}
+
+.main-bulbasaur {
+    padding: 64px;
+}
+
+.section-snorlax {
+    background-color: #F5F1EE;
+    padding: 32px;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+.input-jigglypuff {
+    width: 100%;
+    padding: 12px 12px 12px 50px;
+    font-size: 16px;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    outline: none;
+}
+
+.section-eevee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 40px;
+    position: relative;
+}
+
+.initiative-title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 40px;
+    /* Espacio entre el título y Fuecoco */
+}
+
+.initiative-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 800px;
+    flex-direction: row;
+}
+
+.fuecoco-box {
+    position: relative;
+    background-color: #d6dbd8;
+    /* Fondo solo para Fuecoco */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fuecoco-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.parallax-text-img {
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    width: 80%;
+    max-width: 200px;
+    transition: transform 0.2s ease-out;
+}
+
+.initiative-text {
+    max-width: 600px;
+}
+
+.section-eevee div {
+    width: 100%;
+    text-align: left;
+}
+
+/* .section-eevee h2 {
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+.section-eevee p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* .section-eevee, .section-dragonite {
+    margin: 20px 0;
+} */
+
+.section-dragonite-wrapper {
+    padding: 40px 0;
+    /* Espacio en blanco arriba y abajo */
+    display: flex;
+    justify-content: center;
+}
+
+.section-dragonite {
+    background-color: #F0F3EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.updates-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.updates-content strong {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+
+.footer-squirtle {
+    background-color: #F5F5F5;
+    color: #353534;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-squirtle .email-subscribe {
+    display: flex;
+    gap: 10px;
+}
+
+.input-togepi {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-charmander {
+    background-color: #034AD7;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-charmander:hover {
+    background-color: #0239A5;
+}
+
+.updates-content p {
+    font-size: 16px;
+    padding: 8px;
+}
+
+#team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#about-image {
+    width: 100%;
+}
+
+.avatar-profiles img {
+    width: 40%;
+}
+
+.caption {
+    font-size: 12px;
+}
+
+/* Team About */
+.about-section {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.about-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.about-section p {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 16px auto;
+}
+
+.team-section {
+    margin: 24px 0;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 24px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+}
+
+.about-image img {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* Pokedex */
+.pokedex-container {
+    display: flex;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    min-height: 400px;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.pokedex-container h3 {
+    margin-bottom: 20px;
+}
+
+.pokedex-search {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.pokedex-search h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.pokedex-input {
+    width: 100%;
+    padding: 12px 12px 12px 50px;
+    font-size: 16px;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    outline: none;
+}
+
+.pokedex-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.pokedex-search button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #6C3DFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pokedex-search button:hover {
+    background-color: #5a2dcc;
+}
+
+.pokedex-results {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pokedex-results img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.pokedex-results h3 {
+    font-size: 1.5rem;
+}
+
+.pokedex-results p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.results-section {
+    max-width: 40%;
+}
+
+#empty-square {
+    width: 40%;
+}
+
+/* Searcher */
+.search-section {
+    max-width: 400px;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 24px;
+    /* Espacio entre elementos */
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+.input-search {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    /* Ajuste para el icono */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+}
+
+.input-search:focus {
+    border-color: #6c63ff;
+}
+
+/* Para los filtros */
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.filters select {
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    background-color: #034AD7;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.search-button:hover {
+    background-color: #0239A5;
+}
+
+.label-visible {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.filters label {
+    margin-top: 16px;
+}
+
+/* Map */
+
+.map-section img {
+    width: 600px;
+}
