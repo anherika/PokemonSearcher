@@ -16,6 +16,10 @@ body {
     font-size: 16px;
 }
 
+/* --------------------------
+   Escritorio: +1024px
+--------------------------- */
+
 h1 {
     font-size: 64px;
     font-family: 'DM Sans', sans-serif;
@@ -516,4 +520,96 @@ p {
 
 .map-section img {
     width: 600px;
+}
+
+/* --------------------------
+   Responsive: Móviles (hasta 768px)
+--------------------------- */
+@media (max-width: 768px) {
+    .nav-charizard {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .initiative-content {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .fuecoco-box,
+    .initiative-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .section-snorlax {
+        height: auto;
+        padding: 32px 16px;
+    }
+
+    .pokedex-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .search-section,
+    .pokedex-results,
+    .results-section {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-squirtle .email-subscribe {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .map-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* --------------------------
+   Responsive: Tablets (769px a 1024px)
+--------------------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .initiative-content {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .pokedex-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 32px;
+    }
+
+    .search-section,
+    .pokedex-results {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .team-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .footer-squirtle .email-subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
 }
