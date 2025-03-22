@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 48px;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -123,8 +123,8 @@ p {
 }
 
 .initiative-title {
-    font-size: 2rem;
-    font-weight: bold;
+     /* font-size: 2rem;
+    font-weight: bold;*/
     padding: 40px;
     /* Espacio entre el título y Fuecoco */
 }
@@ -365,9 +365,6 @@ p {
 }
 
 .about-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
     margin-top: 48px;
     text-align: center;
 }
