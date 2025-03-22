@@ -2,7 +2,7 @@
 **Pokémon Searcher** (también conocido como **PokéFind**) es una herramienta creada por y para fans del mundo Pokémon. Te ayuda a buscar Pokémon y construir equipos competitivos para los juegos *Scarlet & Violet* y *Sword & Shield*.
 
 ## 🌐 Demo en vivo 🚀
-https://anherika.github.io/PokemonSearcher)
+https://anherika.github.io/PokemonSearcher
 
 ---
 
