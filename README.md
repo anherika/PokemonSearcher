@@ -38,7 +38,7 @@ PokemonSearcher/
 - **HTML5**   
 - **CSS3 avanzado** con Flexbox y Grid  
 - **Google Fonts**  
-- **Diseño responsive**  
+- **Responsive**  
 - **Git y GitHub** para el control de versiones  
 - **GitHub Pages** 
 
