@@ -8,6 +8,7 @@ https://anherika.github.io/PokemonSearcher
 
 ## 📂 Estructura del proyecto
 
+```
 PokemonSearcher/
 ├── index.html
 ├── assets/
@@ -19,7 +20,7 @@ PokemonSearcher/
 │   ├── team.html
 │   ├── community.html
 │   └── about.html
-
+```
 ---
 
 ## 💡 ¿Qué ofrece?
