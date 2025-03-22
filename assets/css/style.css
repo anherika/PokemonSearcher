@@ -138,6 +138,23 @@ p {
     flex-direction: row;
 }
 
+.initiative-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.initiative-card {
+    max-width: 300px;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 .fuecoco-box {
     position: relative;
     background-color: #d6dbd8;
@@ -442,7 +459,7 @@ p {
 .search-box {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     margin-bottom: 24px;
     /* Espacio entre elementos */
 }
@@ -495,7 +512,7 @@ p {
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     font-size: 16px;
     margin-top: 24px;
 }
@@ -578,7 +595,19 @@ p {
         flex-direction: column;
         align-items: center;
     }
+
+    .initiative-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .initiative-card {
+        max-width: 90%;
+        text-align: center;
+    }
 }
+
+
 
 /* --------------------------
    Responsive: Tablets (769px a 1024px)

@@ -2,64 +2,97 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community - Pokémon Searcher</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunidad - Pokémon Searcher</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
-    <header class="header-pikachu">
-        <nav class="nav-charizard">
-            <img src="../assets/img/pokefind-logo.png" alt="pokefind-logo">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/pokedex.html">Pokedex</a></li>
-                <li><a href="../pages/team.html">Teams</a></li>
-                <li><a href="../pages/community.html" class="active">Community</a></li>
-                <li><a href="../pages/about.html">About us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header-pikachu">
+    <nav class="nav-charizard">
+      <img src="../assets/img/pokefind-logo.png" alt="Logo PokéFind" />
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="pokedex.html">Pokedex</a></li>
+        <li><a href="team.html">Equipos</a></li>
+        <li><a href="community.html" class="active">Comunidad</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="pokedex-container">
-        <section class="search-section">
-            <h3>Find events</h3>
-            <div class="search-box">
-                <input type="text" class="input-search" placeholder="Search events">
-                <img src="../assets/img/icons/search.svg" class="search-icon" alt="Search">
-            </div>
-            <div class="filters">
-                <select class="input-search">
-                    <option>Filter per category</option>
-                </select>
-                <select class="input-search">
-                    <option>Events close to u</option>
-                </select>
-                <select class="input-search">
-                    <option>Yes / No</option>
-                </select>
-            </div>
-            <button class="search-button">Search Event</button>
-        </section>
+  <!-- Main -->
+  <main class="pokedex-container">
+    <!-- Sección de búsqueda de eventos -->
+    <section class="search-section">
+      <h3>Buscar eventos</h3>
+      <div class="search-box">
+        <input type="text" class="input-search" placeholder="Buscar eventos" />
+        <img src="../assets/img/icons/search.svg" class="search-icon" alt="Buscar" />
+      </div>
 
-        <section class="results-section">
-            <div class="image-placeholder"></div>
-            <img id="empty-square" src="../assets/img/map.png" alt="Poke Map">
-            <h3>Explore events near you</h3>
-            <p>Find the best Pokémon community events and connect with trainers worldwide.</p>
-        </section>
-    </main>
+      <div class="filters">
+        <select class="input-search">
+          <option>Categoría del evento</option>
+          <option>Torneos</option>
+          <option>Reuniones</option>
+          <option>Streaming</option>
+        </select>
+        <select class="input-search">
+          <option>Eventos cercanos</option>
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+        <select class="input-search">
+          <option>¿Es gratuito?</option>
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
 
-    <footer class="footer-squirtle">
-        <h3>Subscribe for more</h3>
-        <div class="email-subscribe">
-            <input type="email" placeholder="Email" class="input-togepi">
-            <button class="button-charmander">Subscribe</button>
-        </div>
-        <p class="caption">2025 Pokémonfind.<br>
-            Not affiliated with Nintendo, Game Freak, or The Pokémon Company.</p>
-    </footer>
+      <button class="search-button">Buscar evento</button>
+    </section>
+
+    <!-- Resultados/mapa -->
+    <section class="results-section">
+      <img id="empty-square" src="../assets/img/map.png" alt="Mapa Pokémon" />
+      <h3>Explorá eventos cerca tuyo</h3>
+      <p>Encontrá los mejores eventos de la comunidad Pokémon y conectate con entrenadores de todo el mundo.</p>
+    </section>
+  </main>
+
+<!-- Sección extra: ¿Qué puedes hacer aquí? -->
+<section class="section-dragonite-wrapper">
+  <div class="section-dragonite">
+    <h2 class="initiative-title">¿Que son los eventos?</h2>
+    <div class="initiative-flex">
+      <div class="initiative-card">
+        <p>🤝 Conecta con personas que comparten tus mismos gustos</p>
+      </div>
+      <div class="initiative-card">
+        <p>📊 Comparte tus estrategias para torneos y eventos</p>
+      </div>
+      <div class="initiative-card">
+        <p>🎁 Entérate de promociones, rifas y sorpresas especiales</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer-squirtle">
+    <h3>Suscribite para más novedades</h3>
+    <div class="email-subscribe">
+      <input type="email" placeholder="Email" class="input-togepi" />
+      <button class="button-charmander">Suscribirse</button>
+    </div>
+    <p class="caption">
+      2025 PokémonFind.<br />
+      No afiliado a Nintendo, Game Freak ni The Pokémon Company.
+    </p>
+  </footer>
 </body>
 
 </html>
