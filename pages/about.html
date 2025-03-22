@@ -12,13 +12,15 @@
   <!-- Header -->
   <header class="header-pikachu">
     <nav class="nav-charizard">
-      <img src="../assets/img/pokefind-logo.png" alt="Logo PokéFind" />
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/img/pokefind-logo.png" alt="Logo PokéFind" />
+      </a>
       <ul>
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html">Inicio</a></li>
         <li><a href="pokedex.html">Pokedex</a></li>
-        <li><a href="team.html">Teams</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="about.html" class="active">About us</a></li>
+        <li><a href="team.html">Equipos</a></li>
+        <li><a href="community.html" class="active">Comunidad</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
       </ul>
     </nav>
   </header>
@@ -53,16 +55,60 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer-squirtle">
-    <h3>Suscríbete para tener más información</h3>
-    <div class="email-subscribe">
-      <input type="email" placeholder="Email" class="input-togepi">
-      <button class="button-charmander">Suscribirse</button>
-    </div>
-    <p class="caption">2025 PokémonFind.<br>
-      No afiliado con Nintendo, Game Freak, o The Pokémon Company.</p>
+
+    <!-- Footer -->
+    <footer class="footer-squirtle">
+      <div class="footer-grid">
+          <!-- Columna 1 -->
+          <div class="footer-col">
+              <h3>Pokémon Find</h3>
+              <p>Creado por Fans para fans. <br>
+                  Tu herramienta para encontrar el Pokémon perfecto y crear equipos competitivos fácilmente.</p>
+              <div class="social-icons">
+                  <a href="#" title="GitHub">
+                      <img src="/assets/img/icons/github.svg" alt="GitHub" class="footer-icon">
+                  </a>
+                  <a href="#" title="Twitter / X">
+                      <img src="/assets/img/icons/x.svg" alt="X" class="footer-icon">
+                  </a>
+              </div>
+          </div>
+
+          <!-- Columna 2 -->
+          <div class="footer-col">
+              <h3>Enlaces rápidos</h3>
+              <div class="quick-links">
+                  <a href="pages/pokedex.html">
+                      <img src="/assets/img/icons/pokedex.svg" alt="Pokédex" class="footer-icon"> Pokédex
+                  </a>
+                  <a href="pages/team.html">
+                      <img src="/assets/img/icons/team.svg" alt="Equipo" class="footer-icon"> Equipo
+                  </a>
+              </div>
+          </div>
+
+          <!-- Columna 3 -->
+          <div class="footer-col">
+              <h3>
+                  <img src="/assets/img/icons/suscribe.svg" alt="Suscripcion" class="footer-icon">
+                  Suscríbete
+              </h3>
+              <form class="email-subscribe" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+                  <input type="email" placeholder="Email" class="input-togepi" required>
+                  <button class="button-charmander">Suscribirse</button>
+              </form>
+          </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+          <p>Hecho con ❤️ por An</p><br>
+          <p class="caption">2025 Pokémon Find.<br>No afiliado con Nintendo, Game Freak, o The Pokémon Company.</p>
+      </div>
   </footer>
 
+
 </body>
+
 </html>

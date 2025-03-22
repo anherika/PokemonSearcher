@@ -38,7 +38,7 @@ p {
 
 .header-pikachu {
     font-family: 'DM Sans', sans-serif;
-    background-color: #F5F1EE;
+    background-color: #F5F5F5;
     padding: 20px;
     display: center;
     justify-content: center;
@@ -79,7 +79,7 @@ p {
 }
 
 .section-snorlax {
-    background-color: #F5F1EE;
+    background-color: #F5F5F5;
     padding: 32px;
     height: 362px;
     display: flex;
@@ -212,7 +212,7 @@ p {
 }
 
 .section-dragonite {
-    background-color: #F0F3EF;
+    background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,54 +237,122 @@ p {
 .footer-squirtle {
     background-color: #F5F5F5;
     color: #353534;
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
 }
 
-.footer-squirtle .email-subscribe {
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+    transition: opacity 0.3s;
+}
+
+.footer-icon:hover {
+    opacity: 0.7;
+}
+
+.footer-squirtle .quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.footer-squirtle .quick-links a {
+    text-decoration: none;
+    color: #353534;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.footer-squirtle .quick-links a:hover {
+    color: #034AD7;
+}
+
+.footer-squirtle .social-icons {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.email-subscribe {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-.input-togepi {
+.email-subscribe input.input-togepi {
+    flex: 1;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    outline: none;
 }
 
-.button-charmander {
-    background-color: #034AD7;
-    color: white;
+.email-subscribe .button-charmander {
+    background-color: #a545c0;
+    color: #ededed;
     border: none;
-    padding: 10px;
+    padding: 10px 16px;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
 }
 
-.button-charmander:hover {
-    background-color: #0239A5;
+.email-subscribe .button-charmander:hover {
+    background-color: #7f149d;
+    color:#ededed;
 }
 
-.updates-content p {
-    font-size: 16px;
-    padding: 8px;
-}
-
-#team {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-#about-image {
+.footer-divider {
+    border: none;
+    height: 1px;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-.avatar-profiles img {
-    width: 40%;
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
 }
 
 .caption {
@@ -404,7 +472,7 @@ p {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background-color: #6C3DFF;
+    background-color: #a545c0;
     color: white;
     border: none;
     border-radius: 5px;
@@ -412,7 +480,7 @@ p {
 }
 
 .pokedex-search button:hover {
-    background-color: #5a2dcc;
+    background-color: #7f149d;
 }
 
 .pokedex-results {
@@ -505,7 +573,7 @@ p {
 }
 
 .search-button {
-    background-color: #034AD7;
+    background-color: #a545c0;
     color: white;
     border: none;
     padding: 10px;
@@ -518,7 +586,7 @@ p {
 }
 
 .search-button:hover {
-    background-color: #0239A5;
+    background-color: #7f149d;
 }
 
 .label-visible {
