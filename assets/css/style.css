@@ -21,14 +21,24 @@ body {
 --------------------------- */
 
 h1 {
-    font-size: 64px;
+    font-size: 4em;
     font-family: 'DM Sans', sans-serif;
     padding: 8px;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 3em;
     font-family: 'DM Sans', sans-serif;
+}
+
+h3 {
+    font-size: 2em;
+    padding: 16px 0px;
+}
+
+h4 {
+    font-size: 1.4em;
+    padding: 8px 0px;
 }
 
 p {
@@ -43,6 +53,11 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #F5F5F5;
+    box-shadow: 0px 5px 7px 6px rgb(0 0 0 / 2%); 
 }
 
 .nav-charizard {
@@ -63,10 +78,22 @@ p {
     gap: 20px;
 }
 
-.nav-charizard a {
+.nav-charizard .navigation a {
     text-decoration: none;
     color: #333;
     font-weight: 300;
+}
+
+.nav-charizard .navigation a :hover {
+    color: #7f149d;
+    border-bottom: 2px solid #7f149d;
+    padding-bottom: 2px; 
+} 
+
+.nav-charizard .navigation a.active {
+    color: #7f149d;
+    border-bottom: 2px solid #7f149d;
+    padding-bottom: 2px;
 }
 
 .nav-charizard img {
@@ -163,21 +190,28 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible; /* importante para controlarlo */
 }
 
 .fuecoco-img {
     width: 100%;
-    max-width: 300px;
+    top: -40px;
     height: auto;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.2)); /* como si flotara */
 }
 
 .parallax-text-img {
     position: absolute;
-    top: 75%;
-    left: 60%;
+    top: 66%;
+    left: 36%;
     width: 80%;
-    max-width: 200px;
-    transition: transform 0.2s ease-out;
+    max-width: 400px;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.9;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
 }
 
 .initiative-text {
@@ -221,11 +255,11 @@ p {
     border-radius: 15px;
 }
 
-.updates-title {
+/*.updates-title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-}
+} */
 
 .updates-content strong {
     font-size: 1.2rem;
@@ -300,14 +334,14 @@ p {
 }
 
 .footer-squirtle .quick-links a:hover {
-    color: #034AD7;
+    color: #7f149d;
 }
 
 .footer-squirtle .social-icons {
     display: flex;
     gap: 16px;
     justify-content: flex-start;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .email-subscribe {
@@ -428,9 +462,9 @@ p {
     width: 400px;
 }
 
-.pokedex-container h3 {
+/*.pokedex-container h3 {
     margin-bottom: 20px;
-}
+}*/
 
 .pokedex-search {
     position: relative;
@@ -608,12 +642,33 @@ p {
    Responsive: Móviles (hasta 768px)
 --------------------------- */
 @media (max-width: 768px) {
+    
+    h1 {
+        font-size: 2.44em;
+        padding: 2px;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .main-bulbasaur {
+        padding: 24px;
+    }
+
     .nav-charizard {
         flex-direction: column;
         gap: 16px;
         text-align: center;
     }
 
+    .initiative-title {
+        padding: 0px 16px 32px 0px;
+    }
     .initiative-content {
         flex-direction: column;
         gap: 32px;
@@ -646,7 +701,6 @@ p {
     }
 
     .footer-squirtle .email-subscribe {
-        flex-direction: column;
         width: 100%;
         align-items: center;
     }
@@ -670,6 +724,10 @@ p {
         max-width: 90%;
         text-align: center;
     }
+    .footer-squirtle .quick-links {
+        flex-direction: row;
+        gap: 40px;
+    }
 }
 
 
@@ -678,6 +736,8 @@ p {
    Responsive: Tablets (769px a 1024px)
 --------------------------- */
 @media (min-width: 769px) and (max-width: 1024px) {
+
+    
     .initiative-content {
         flex-direction: column;
         gap: 40px;
