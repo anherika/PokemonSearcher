@@ -57,7 +57,7 @@ p {
     top: 0;
     z-index: 1000;
     background-color: #F5F5F5;
-    box-shadow: 0px 5px 7px 6px rgb(0 0 0 / 2%); 
+    box-shadow: 0px 5px 7px 6px rgb(0 0 0 / 2%);
 }
 
 .nav-charizard {
@@ -87,8 +87,8 @@ p {
 .nav-charizard .navigation a :hover {
     color: #7f149d;
     border-bottom: 2px solid #7f149d;
-    padding-bottom: 2px; 
-} 
+    padding-bottom: 2px;
+}
 
 .nav-charizard .navigation a.active {
     color: #7f149d;
@@ -150,7 +150,7 @@ p {
 }
 
 .initiative-title {
-     /* font-size: 2rem;
+    /* font-size: 2rem;
     font-weight: bold;*/
     padding: 40px;
     /* Espacio entre el título y Fuecoco */
@@ -190,7 +190,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: visible; /* importante para controlarlo */
+    overflow: visible;
+    /* importante para controlarlo */
 }
 
 .fuecoco-img {
@@ -199,7 +200,8 @@ p {
     height: auto;
     position: relative;
     z-index: 1;
-    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.2)); /* como si flotara */
+    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.2));
+    /* como si flotara */
 }
 
 .parallax-text-img {
@@ -371,7 +373,7 @@ p {
 
 .email-subscribe .button-charmander:hover {
     background-color: #7f149d;
-    color:#ededed;
+    color: #ededed;
 }
 
 .footer-divider {
@@ -638,16 +640,95 @@ p {
     width: 600px;
 }
 
+.highlighted-teams {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.team-card {
+    min-width: 160px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 24px;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card img {
+    width: 30%;
+    border-radius: 8px 8px 0 0;
+}
+
+.carousel-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.carousel-pokemon img {
+    width: 40px;
+    height: 40px;
+}
+
+.team-radio {
+    display: none;
+}
+
+.team-details-wrapper>.team-details {
+    display: none;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 24px;
+}
+
+#team1:checked~.team-details-wrapper #details-team1,
+#team2:checked~.team-details-wrapper #details-team2,
+#team3:checked~.team-details-wrapper #details-team3 {
+    display: block;
+}
+
+.team-pokemon {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.team-pokemon img {
+    width: 64px;
+    height: 64px;
+}
+
 /* --------------------------
    Responsive: Móviles (hasta 768px)
 --------------------------- */
 @media (max-width: 768px) {
-    
+
     h1 {
         font-size: 2.44em;
         padding: 2px;
     }
-    
+
     h2 {
         font-size: 1.8em;
     }
@@ -669,6 +750,7 @@ p {
     .initiative-title {
         padding: 0px 16px 32px 0px;
     }
+
     .initiative-content {
         flex-direction: column;
         gap: 32px;
@@ -724,6 +806,7 @@ p {
         max-width: 90%;
         text-align: center;
     }
+
     .footer-squirtle .quick-links {
         flex-direction: row;
         gap: 40px;
@@ -737,7 +820,7 @@ p {
 --------------------------- */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    
+
     .initiative-content {
         flex-direction: column;
         gap: 40px;
