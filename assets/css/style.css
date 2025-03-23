@@ -694,7 +694,7 @@ p {
 .team-details-wrapper>.team-details {
     display: none;
     text-align: left;
-    background-color: white;
+    background-color: #f1f1f1;
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -718,6 +718,35 @@ p {
     width: 64px;
     height: 64px;
 }
+
+/* Tooltip personalizado para cada Pokémon */
+.team-pokemon img[title] {
+    position: relative;
+    cursor: help;
+  }
+
+  .team-pokemon img[title]::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #a545c0;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.05s ease-in;
+    z-index: 10;
+  }
+
+  .team-pokemon img[title]:hover::after {
+    opacity: 1;
+  }
+
 
 /* --------------------------
    Responsive: Móviles (hasta 768px)
@@ -811,9 +840,10 @@ p {
         flex-direction: row;
         gap: 40px;
     }
+    .carousel-container {
+    flex-direction: column;   
+    }  
 }
-
-
 
 /* --------------------------
    Responsive: Tablets (769px a 1024px)
