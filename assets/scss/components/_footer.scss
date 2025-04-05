@@ -1,0 +1,121 @@
+/* Footer */
+
+.footer-squirtle {
+    @include flex-column;
+    align-items: center;
+    gap: 32px;
+    background-color: #F5F5F5;
+    color: #353534;
+    padding: 40px 20px;
+  }
+  .footer-grid {
+    @include flex-column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+    transition: opacity 0.3s;
+}
+
+.footer-icon:hover {
+    opacity: 0.7;
+}
+
+.footer-squirtle .quick-links {
+    @include flex-column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+.footer-squirtle .quick-links a {
+    text-decoration: none;
+    color: #353534;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.footer-squirtle .quick-links a:hover {
+    color: #7f149d;
+}
+
+.footer-squirtle .social-icons {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  
+  .email-subscribe {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }  
+
+.email-subscribe input.input-togepi {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.email-subscribe .button-charmander {
+    background-color: #a545c0;
+    color: #ededed;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.email-subscribe .button-charmander:hover {
+    background-color: #7f149d;
+    color: #ededed;
+}
+
+.footer-divider {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.caption {
+    font-size: 12px;
+}
