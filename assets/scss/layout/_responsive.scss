@@ -1,132 +1,168 @@
+@use "../utils/mixins" as *;
+
 /* --------------------------
 Responsive: Móviles (hasta 768px)
 --------------------------- */
 @media (max-width: 768px) {
+	/* Tamaño de textos */
+	h1 {
+		font-size: 2.44em;
+		padding: 2px;
+	}
 
-    h1 {
-        font-size: 2.44em;
-        padding: 2px;
-    }
+	h2 {
+		font-size: 1.8em;
+	}
 
-    h2 {
-        font-size: 1.8em;
-    }
+	h3 {
+		font-size: 1.2em;
+	}
 
-    h3 {
-        font-size: 1.2em;
-    }
+	/* Header hamburguesa y comportamiento */
+	.hamburger {
+		display: block;
+		font-size: 2rem;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: #333;
+		padding: .5em;
+		z-index: 999;
+	}
 
+	.navigation {
+        display: none !important; // ⛔ OCULTA por defecto
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: .8em;
+		background-color: #f5f5f5;
+		padding: 1em 0;
+	}
+
+	.navigation.active {
+		display: flex !important; // ✅ MUESTRA solo cuando está activa
+	}
+
+	.nav-charizard {
+		flex-wrap: wrap;
+        justify-content: space-between; // esto distribuye el logo y el botón
+        align-items: center;
+        width: 100%;
+        gap: 1em;
+	}
+
+	/* Sección bulbasaur */
     .main-bulbasaur {
-        padding: 24px;
+        padding: 2em;
     }
 
-    .nav-charizard {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-    }
 
-    .initiative-title {
-        padding: 0px 16px 32px 0px;
-    }
+	/* Sección iniciativa */
+	.initiative-title {
+		padding: 0px 16px 32px 0px;
+	}
 
-    .initiative-content {
-        flex-direction: column;
-        gap: 32px;
-        align-items: center;
-    }
+	.initiative-content {
+		flex-direction: column;
+		gap: 32px;
+		align-items: center;
+	}
 
-    .fuecoco-box,
-    .initiative-text {
-        max-width: 100%;
-        text-align: center;
-    }
+	.fuecoco-box,
+	.initiative-text {
+		max-width: 100%;
+		text-align: center;
+	}
 
-    .section-snorlax {
-        height: auto;
-        padding: 32px 16px;
-    }
+	/* Sección hero */
+	.section-snorlax {
+		height: auto;
+		padding: 32px 16px;
+	}
 
-    .pokedex-container {
-        flex-direction: column;
-        gap: 40px;
-        padding: 20px;
-    }
+	/* Pokedex layout */
+	.pokedex-container {
+		flex-direction: column;
+		gap: 40px;
+		padding: 20px;
+	}
 
-    .search-section,
-    .pokedex-results,
-    .results-section {
-        width: 100%;
-        max-width: 100%;
-        text-align: center;
-    }
+	.search-section,
+	.pokedex-results,
+	.results-section {
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+	}
 
-    .footer-squirtle .email-subscribe {
-        width: 100%;
-        align-items: center;
-    }
+	/* Footer ajustes */
+	.footer-squirtle .email-subscribe {
+		width: 100%;
+		align-items: center;
+	}
 
-    .map-section img {
-        width: 100%;
-        height: auto;
-    }
+	.footer-squirtle .quick-links {
+		flex-direction: row;
+		gap: 40px;
+	}
 
-    .team-container {
-        flex-direction: column;
-        align-items: center;
-    }
+	.map-section img {
+		width: 100%;
+		height: auto;
+	}
 
-    .initiative-flex {
-        flex-direction: column;
-        align-items: center;
-    }
+	.team-container {
+		flex-direction: column;
+		align-items: center;
+	}
 
-    .initiative-card {
-        max-width: 90%;
-        text-align: center;
-    }
+	.initiative-flex {
+		flex-direction: column;
+		align-items: center;
+	}
 
-    .footer-squirtle .quick-links {
-        flex-direction: row;
-        gap: 40px;
-    }
-    .carousel-container {
-    flex-direction: column;   
-    }  
+	.initiative-card {
+		max-width: 90%;
+		text-align: center;
+	}
+
+	.carousel-container {
+		flex-direction: column;
+	}
 }
 
 /* --------------------------
-Responsive: Tablets (769px a 1024px)
---------------------------- */
+  Responsive: Tablets (769px a 1024px)
+  --------------------------- */
 @media (min-width: 769px) and (max-width: 1024px) {
+	.initiative-content {
+		flex-direction: column;
+		gap: 40px;
+		align-items: center;
+	}
 
+	.pokedex-container {
+		flex-direction: column;
+		gap: 40px;
+		padding: 32px;
+	}
 
-    .initiative-content {
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-    }
+	.search-section,
+	.pokedex-results {
+		width: 100%;
+		max-width: 100%;
+	}
 
-    .pokedex-container {
-        flex-direction: column;
-        gap: 40px;
-        padding: 32px;
-    }
+	.team-container {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 24px;
+	}
 
-    .search-section,
-    .pokedex-results {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .team-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
-    }
-
-    .footer-squirtle .email-subscribe {
-        flex-direction: column;
-        align-items: center;
-    }
+	.footer-squirtle .email-subscribe {
+		flex-direction: column;
+		align-items: center;
+	}
 }

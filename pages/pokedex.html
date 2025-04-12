@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokefinder - Pokedex</title>
-    <link rel="stylesheet" href="../assets/scss/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body>
     <!-- Header -->
     <header class="header-pikachu">
         <nav class="nav-charizard">
+            <!-- Logo -->
             <a href="../index.html" class="logo-link">
                 <img src="../assets/img/pokefind-logo.png" alt="Logo PokéFind">
             </a>
+
+            <!-- Botón Hamburguesa (solo visible en responsive) -->
+            <button class="hamburger" id="hamburger-btn">
+                ☰
+            </button>
+
+            <!-- Menú de navegación -->
             <ul class="navigation">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/pokedex.html" class="active">Pokedex</a></li>
@@ -55,10 +63,8 @@
                     <option>Ice Beam</option>
                 </select>
             </div>
-            </div>
             <button class="search-button">Buscar mi pokemón</button>
         </section>
-
         <section class="results-section">
             <div class="image-placeholder"></div>
             <img id="empty-square" src="../assets/img/searcher.png" alt="">
@@ -67,6 +73,11 @@
                 que quieres tener cada batalla, ¡Será una verdadera confrontación con el destino!.</p>
         </section>
     </main>
+
+    <!-- Sección: Equipos destacados -->
+    <section class="highlighted-teams">
+        <h3>Pokémon más elegidos</h3>
+    </section>
 
     <!-- Footer -->
     <footer class="footer-squirtle">
@@ -118,6 +129,9 @@
             <p class="caption">2025 Pokémon Find.<br>No afiliado con Nintendo, Game Freak, o The Pokémon Company.</p>
         </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
+
 </body>
 
 </html>

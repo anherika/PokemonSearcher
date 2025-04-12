@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon Find</title>
-    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
@@ -13,9 +13,17 @@
     <!-- Header -->
     <header class="header-pikachu">
         <nav class="nav-charizard">
-            <a href="./index.html">
+            <!-- Logo (ruta desde raíz) -->
+            <a href="./index.html" class="logo-link">
                 <img src="assets/img/pokefind-logo.png" alt="PokéFind" />
             </a>
+
+            <!-- Botón hamburguesa (visible solo en móvil) -->
+            <button class="hamburger" id="hamburger-btn">
+                ☰
+            </button>
+
+            <!-- Menú de navegación -->
             <ul class="navigation">
                 <li><a href="./index.html" class="active">Inicio</a></li>
                 <li><a href="./pages/pokedex.html">Pokedex</a></li>
@@ -79,10 +87,13 @@
                     </p> <br>
                     <h4>v.01</strong></h4>
                     <p>¡Esto es solo el comienzo!<br>
-                        Esta primera versión de PokéFind es como una demo, centrada únicamente en la generación más reciente de Pokémon. <br> <br>
-                        Ya estamos trabajando en incluir las generaciones anteriores en futuras actualizaciones, ¡así que mantente al tanto!
+                        Esta primera versión de PokéFind es como una demo, centrada únicamente en la generación más
+                        reciente de Pokémon. <br> <br>
+                        Ya estamos trabajando en incluir las generaciones anteriores en futuras actualizaciones, ¡así
+                        que mantente al tanto!
                     </p>
-                    <p>Agradecemos tu paciencia y apoyo mientras seguimos mejorando la herramienta para todos los entrenadores.</p>
+                    <p>Agradecemos tu paciencia y apoyo mientras seguimos mejorando la herramienta para todos los
+                        entrenadores.</p>
                 </div>
             </div>
         </section>
@@ -141,6 +152,8 @@
             </p>
         </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 

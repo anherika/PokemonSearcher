@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 /* Aquí van tarjetas, buscadores, inputs */
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
@@ -347,7 +349,7 @@ p {
 .search-box {
 	position: relative;
 	width: 100%;
-	max-width: 480px;
+/*	max-width: 480px; */
 	margin-bottom: 24px;
 	/* Espacio entre elementos */
 }
@@ -400,7 +402,7 @@ p {
 	cursor: pointer;
 	border-radius: 5px;
 	width: 100%;
-	max-width: 480px;
+/*	max-width: 480px; */
 	font-size: 16px;
 	margin-top: 24px;
 }
