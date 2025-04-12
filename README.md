@@ -37,6 +37,9 @@ PokemonSearcher/
 - 📩 Suscripción a novedades.
 
 ---
+✨Nuevo✨
+- Menu responsive con menú hamburguesa.
+---
 
 ## 🛠 Tecnologías Utilizadas
 
