@@ -24,3 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
       // Ya no se cierra el menú al hacer clic en los enlaces
     }
   });
+
